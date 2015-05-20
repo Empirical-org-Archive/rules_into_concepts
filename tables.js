@@ -26,7 +26,7 @@ AC : activity_id, body, concept_ids
 C : id, name
 
 // concept - concept
-CC : id, parent_id, child_id
+CC : parent_id, child_id
 
 // concept - set_of_questions
 CSQ : concept_id, set_of_questions_id
