@@ -19,26 +19,23 @@ RQR: rule_question_id, body, rule_id
 
 new system :
 
-// activity - concepts
-AC : activity_id, body, concept_ids
+// activities
+AC : id, body, concept_ids
 
 // concept
 C : id, name
 
-// concept - concept
-CC : parent_id, child_id
-
-// concept - set_of_questions
-CSQ : concept_id, set_of_questions_id
+// concept relations
+CC : id, parent_id, child_id
 
 // concept - question
-CQ : concept_id, question_id
+CQ : id, concept_id, question_id
 
 // set_of_questions
-SQ : set_of_questions_id, description
+SQ : id, description, concept_id
 
-// question - set_of_questions
-Q : question_id, body, set_of_questions_id
+// questions
+Q : id, body, set_of_questions_id
 
 
 
